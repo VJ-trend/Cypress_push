@@ -1,0 +1,61 @@
+
+
+SDLC
+------
+Requirement Gathering - 
+Analysis - BA
+Designing Arch
+Coding - Dev
+Testing - Test
+Deployment - Devops
+
+
+STLC
+-----
+Requirement Analysis - BA / Client /Scrum master
+Planning - QA Lead
+Test case Designing - Team Member
+
+	Project
+	--------
+	    4 to 15 Module
+		70 - 400 Test Cases for each module
+
+Envi setup
+Test execution
+Test cycle closer 
+	Report
+
+--------------------------------------------
+smoke
+sanity
+Regression
+
+Application
+-----------
+
+Jenkins
+----------
+
+	Dev 192.168.29.121/dev/makemytrip.com 100%
+	QA  demo, qa, stage, preprod 
+		192.168.29.121/demo/makemytrip.com  50%
+		193.172.30.127/qa/makemytrip.com  25%
+		195.189.32.128/stage/makemytrip.com 10%
+		197.203.34.126/preprod/makemytrip.com 5%
+	UAT	194.233.37.126/uat/makemytrip.com 1%
+	Prod    196.243.34.123/prod/makemytrip.com 0%  (if a bug is found out? )
+	Live	https://www.makemytrip.com/flights/ 100% - Bug free
+	
+
+Environment changing - Pipeline
+
+
+
+
+
+
+
+
+
+
