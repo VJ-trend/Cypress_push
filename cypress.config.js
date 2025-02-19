@@ -1,17 +1,14 @@
-const { defineConfig } = require("cypress");
+// cypress.config.js
 
-module.exports = defineConfig({
+// Ensure you have Cypress imported at the top
+const Cypress = require('cypress');
 
-  reporter:"cypress-allure-plugin",
-  reporterOptions:{
-    resultsDir:"allure-results"
-  },
-
+module.exports = {
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
-      require("@shelex/cypress-allure-plugin")(on);
+      // Ensure Allure plugin writes results
+      require('@shelex/cypress-allure-plugin/writer')(on);
       return config;
     },
   },
-});
+};
